@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buckle My Shoe</title>
+</head>
+<body>
+    <h1>Buckle My Shoe</h1>
+    <h2>Enter a number 1-10 to see what you should do!</h2>
+    <form method="post" action="/">
+        <label for="number">Number:</label>
+        <input type="text" name="number">
+        <button type="submit">Go</button>
+        <% if (message) { %>
+            <p class="result"><%= message %></p>
+        <% } %>
+    </form>
+</body>
+</html>
